@@ -1,0 +1,29 @@
+@media screen and (max-width: 1270px){
+    .members{
+        flex-direction: column;
+    }
+
+    .member{
+        margin-bottom: 70px;
+    }
+
+    .circles{
+        width: 100%;
+        transform: none;
+    }
+
+    .first{
+        display: flex;
+        transform: translateY(-40%);
+    }
+
+    .second{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .third{
+        display: flex;
+        transform: translateY(100%);
+    }
+}

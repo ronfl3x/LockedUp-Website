@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.content{
+    padding: 0 5rem;
+}
+
+.black-wave{
+    z-index: 0;
+    position: absolute;
+    height: auto;
+    width: 60vw;
+    right: 0;
+}
+
+.main{
+    padding: 0 10vw;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main p{
+    width: 40vw;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.main img{
+    border-radius: 25px;
+    width: 35vw;
+    height: auto;
+    z-index: 1;
+    box-shadow:  5px 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.see-more p{
+    font-size: 1.5rem;
+}
+
+.see-more ion-icon{
+    font-size: 2.5rem;
+    --ionicon-stroke-width: 16px;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.see-more ion-icon:hover{
+    transform: translateY(5px);
+}
+
+.timeline-content{
+    /*height: 100vh;*/
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.timeline-content h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.time-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timeline{
+    width: 50%;
+    margin-top: 100px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.timeline .center-line{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background:linear-gradient(to bottom, #fff 0, #000 5%, #000 33%, #000 66%, #000 95%, #fff 100%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+}
+
+.timeline .row{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.timeline .row-1{
+    justify-content: flex-start;
+}
+
+.timeline .row-2{
+    justify-content: flex-end;
+}
+
+
+.timeline .row section{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    box-shadow:  1px 4px 8px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    transform: rotate(45deg);
+    top: 28px;
+    box-shadow:  1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.row-1 section::before{
+    right: -7px;
+}
+
+.row-2 section::before{
+    left: -7px;
+}
+
+.row section .icon{
+    position: absolute;
+    background: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    top: 13px;
+}
+
+.row-1 section .icon{
+    right: -60px;
+}
+
+.row-2 section .icon{
+    left: -60px;
+}
+
+.row section h5{
+    color: #9494ef;
+}
+
+.row section h4{
+    padding: 10px 0;
+}
+
+.row section p{
+    font-size: 0.9rem ;
+}
+
+.problems{
+    margin-top: 100px;
+    width: 40%;
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    height: 50vh;
+    border-radius: 25px 5px 5px 25px;
+    overflow-y: scroll;
+    text-align: justify;
+}
+
+.problems h2{
+    text-align: center;
+    padding: 15px;
+}
+
+.problems article{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(148, 148, 239, 0.14);
+    box-shadow:  1px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.problems article h4{
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px){
+    .black-wave{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main p{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main img{
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .see-more{
+        margin-top: 20px;
+    }
+
+    .timeline-content{
+        margin-top: 100px;
+    }
+
+    .timeline-content h1{
+        font-size: 2rem;
+    }
+
+    .time-div{
+        flex-direction: column;
+    }
+
+    .timeline{
+        width: 100%;
+        margin-top: 100px;
+        padding: 0;
+    }
+
+    .timeline .center-line{
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background:linear-gradient(to bottom, #fff 0, #000 5%, #000 33%, #000 66%, #000 95%, #fff 100%);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 25px;
+    }
+
+    .timeline .row{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .timeline .row-1{
+        justify-content: center;
+    }
+
+    .timeline .row-2{
+        justify-content: center;
+    }
+
+    .timeline .row section{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+        width: calc(100% - 40px);
+        padding: 20px;
+        box-shadow:  1px 4px 8px 0 rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    .timeline .row section::before{
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        background: white;
+        transform: rotate(45deg);
+        top: 28px;
+        box-shadow:  1px 4px 8px 0 rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }
+
+    .problems{
+        margin-top: 100px;
+        width: 100%;
+        padding: 20px 40px;
+        background-color: black;
+        color: white;
+        height: 50vh;
+        border-radius: 25px 5px 5px 25px;
+        overflow-y: scroll;
+        text-align: justify;
+    }
+}
+
+

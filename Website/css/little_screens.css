@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px){
+    .nav-btn{
+        display: flex;
+    }
+
+    .nav-ul{
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: black;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo img{
+        height: 10vh;
+        max-height: 150px;
+    }
+
+    .nav-ul.open{
+        transform: translateX(0);
+    }
+
+    .nav-ul li a{
+        font-size: 3vh;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .nav-ul li a:hover{
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 0.5;
+    }
+
+    .nav-ul li{
+        display: flex;
+    }
+
+    .nav-btn.open .nav-btn-lines::before{
+        background-color: white;
+    }
+
+    .nav-btn.open .nav-btn-lines::after{
+        background-color: white;
+    }
+}

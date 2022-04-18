@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    /*background: #545454;*/
+    overflow-x: hidden;
+}
+
+main{
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content{
+    padding: 0 5vw;
+    margin-top: 60px;
+}
+
+
+title{
+    font-size: 3.4rem;
+    font-weight: bold;
+    display: block;
+}
+
+.downloads{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+}
+
+.element{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.member{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:50px 40px;
+    margin: 0 80px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 15px;
+    min-height: 320px;
+    /*min-width: 100%;*/
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.major{
+    flex: 3;
+    height: 100%;
+    width: 100%;
+}
+.member h3{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.member img{
+    width: 70%;
+    /*max-width: 200px;*/
+    min-width: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.member p{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+.member a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.major a{
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width : 769px) {
+
+    .downloads{
+        flex-direction: column;
+    }
+
+    .major, .lite, .second, .third{
+        display: none;
+    }
+
+    .member p{
+        font-size: 1.1rem;
+    }
+}
+
+.circles{
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.circles svg{
+    width: 15vw;
+    min-width: 150px;
+}

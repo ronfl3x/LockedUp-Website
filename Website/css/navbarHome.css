@@ -1,0 +1,8 @@
+.nav-ul li a{
+    color: white;
+}
+
+.nav-ul li a:hover{
+    background-color: black;
+    box-shadow:  1px 4px 8px 0 rgba(252, 113, 54, 0.35);;
+}

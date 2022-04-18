@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    /*background: #545454;*/
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    margin: 40px 130px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+section{
+    border-radius: 25px;
+    flex:1;
+    border: 1px black solid;
+    padding: 20px 20px 190px 20px;
+    text-align: center;
+    margin-right: 70px;
+}
+
+section:last-of-type{
+    margin-right: 0;
+}
+
+
+title{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section div div:first-child{
+    margin-bottom: 30px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.unity h2, .visual h2{
+    margin-bottom: 30px;
+}
+
+.see-more{
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid 2px black;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.see-more:hover{
+    background-color: black;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.our-links a{
+    /*text-decoration: underline;*/
+}
+
+a:hover{
+    text-decoration: underline;
+}

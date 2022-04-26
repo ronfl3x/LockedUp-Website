@@ -100,9 +100,17 @@ title{
     border-radius: 25px;
     padding: 10px 20px;
 }
+.member a:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #9494ef;
+}
 
 .major a{
     font-size: 1.8rem;
+}
+
+.reports a{
+    margin-top: 20px;
 }
 
 @media screen and (max-width : 769px) {
